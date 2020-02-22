@@ -1,0 +1,29 @@
+<html>
+<body>
+<p id = "data"></p>
+<script>
+    var request = new XMLHttpRequest();
+    request.open('GET', 'http://worldtimeapi.org/api/timezone/Europe/Warsaw', true);
+    request.onload = function() {
+        var data = JSON.parse(this.responseText);
+
+        if (request.status >= 200 && request.status < 400) {
+            let unixTime = data.unixtime;
+            //Zamiana unixtimestamp na zwykly czas
+            dateObj = new Date(unixTime * 1000 + 3600000); //+ 3600000 dodanie godziny aby wyswietlic dobry czas
+            hours = dateObj.getUTCHours(); 
+            minutes = dateObj.getUTCMinutes(); 
+            seconds = dateObj.getUTCSeconds(); 
+  
+            formattedTime = hours.toString().padStart(2, '0') + ':' + minutes.toString().padStart(2, '0') + ':' + seconds.toString().padStart(2, '0'); 
+
+            document.getElementById("data").innerHTML = formattedTime;
+        } 
+        else {
+            console.log('error');
+        }
+    }
+    request.send()
+</script>
+</body>
+</html>
