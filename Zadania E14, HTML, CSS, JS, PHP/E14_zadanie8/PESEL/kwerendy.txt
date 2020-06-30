@@ -1,0 +1,4 @@
+Zapytanie 1: SELECT nazwisko, PESEL from uczen;
+Zapytanie 2: SELECT imie, nazwisko from uczen where id = 1;
+Zapytanie 3: SELECT max(ocena) as ocena from uczen inner join ocena on uczen.id = ocena.uczen_id where uczen.id = 1 and przedmiot_id = 4;
+Zapytanie 4: SELECT count(ocena) as ocen from uczen inner join ocena on uczen.id = ocena.uczen_id where uczen.id = 1 and przedmiot_id = 4;

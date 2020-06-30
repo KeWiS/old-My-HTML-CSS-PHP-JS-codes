@@ -1,0 +1,4 @@
+Zapytanie 1: SELECT nazwa, miasto FROM lokale
+Zapytanie 2: SELECT id, nazwa, cena FROM dania where typ = 3
+Zapytanie 3: SELECT min(cena) FROM dania where typ = 2
+Zapytanie 4: UPDATE lokale SET numer = 23 WHERE id = 1

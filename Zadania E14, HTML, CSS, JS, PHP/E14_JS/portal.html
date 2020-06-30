@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8" />
+        <title>Ogłoszenia</title>
+        <link rel = "stylesheet" type = "text/css" href = "styl6.css" />
+    </head>
+    <body>
+        <header>
+            <h1>
+                Ogłoszenia drobne
+            </h1>
+        </header>
+        <section id = "1" class = "informacyjny">
+            <h3>
+                <br>telefon<br><br>
+            </h3>
+            <p>
+                601601601
+            </p>
+        </section>
+        <section id = "2" class = "informacyjny">
+            <h3>
+                <br>email<br><br>
+            </h3>
+            <p>
+                ogloszenia@poczta.pl
+            </p>
+        </section>
+        <section id = "3" class = "informacyjny">
+            <h3>
+                <br>Adres<br><br>
+            </h3>
+            <p>
+                ul. Morska 45<br><br>
+                Gdynia
+            </p>    
+        </section>
+        <section id = "4" class = "informacyjny">
+            <img src = "logo.png" />
+        </section>
+        <section class = "lewyp">
+            <h2>
+                <br>Ceny<br><br>
+            </h2>
+            <table>
+                <tr>
+                    <td>Ile?</td>
+                    <td>Koszt</td>
+                    <td>Upust</td>
+                </tr>
+                <tr>
+                        <td>1-40</td>
+                        <td>3 PLN</td>
+                        <td rowspan = "2">0,30 PLN dla stałych klientów</td>
+                </tr>
+                <tr>
+                        <td>41 i więcej</td>
+                        <td>2 PLN</td>
+                </tr>
+            </table>
+        </section>
+        <section class = "srodkowyp">
+            <h2>
+                <br>Policz koszt ogłoszenia<br><br>
+            </h2>
+            Liczba ogłoszeń:<br>
+            <input id = "numer" type = "number" /><br>
+            <input id = "staly" type = "checkbox" />Jestem stałym klientem<br>
+            <button type = "button" onclick = "wykonaj()">Kalkulacja</button>
+            <p id = "koszt" />
+        </section>
+        <section class = "prawyp">
+            <h2>
+                <br>Znajdujesz się na stronie portalu ogłoszeniowego<br><br>
+            </h2>
+            <img src = "grafika.png" alt = "Oblicz koszt ogłoszenia" />
+        </section>
+        <footer>
+            Portal ogłoszeniowy opracował: Michał Siwek 
+        </footer>
+        <script>
+            const liczba_ogloszen = document.querySelector("#numer");
+            const stan_checkboxa = document.querySelector("#staly");
+
+            function wykonaj(){
+                let wynik = 0;
+                let do_41 = 3;
+                let od_41 = 2;
+                if(stan_checkboxa.checked){
+                    do_41 -= 0.3;
+                    od_41 -= 0.3;
+                }
+                if(+liczba_ogloszen.value >= 1 && +liczba_ogloszen.value <= 40){wynik = +liczba_ogloszen.value * do_41}
+                else if(+liczba_ogloszen.value >= 41){wynik = +liczba_ogloszen.value * od_41}
+                return document.getElementById("koszt").innerHTML = "Twoje ogloszenia będą kosztować: " + wynik + " PLN";
+            }
+        </script>
+    </body>
+</html>

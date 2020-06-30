@@ -1,0 +1,26 @@
+header{
+    background-color: #3A7AD9;
+    text-align: center;
+    height: 50px;
+}
+
+.lewy{
+    background-color: #5D93E2;
+    height: 400px;
+    width: 30%;
+    display: inline-block;
+    float: left;
+}
+
+.prawy{
+    background-color: #88B0EC;
+    height: 400px;
+    width: 70%;
+    display: inline-block;
+    float: left;
+}
+
+footer{
+    background-color: #3A7AD9;
+    text-align: right;
+}

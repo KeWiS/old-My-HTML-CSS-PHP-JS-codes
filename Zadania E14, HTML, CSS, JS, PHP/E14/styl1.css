@@ -1,0 +1,43 @@
+body{
+    font-family: Tahoma;
+    background-color: #F6E5DC;
+}
+
+header{
+    background-color:  #2F180C;
+    height: 60px;
+    color: white;
+    text-align: center;
+}
+
+.leftp{
+    display: inline-block;
+    width: 60%;
+}
+
+.rightp{
+    display: inline-block;
+    font-size: 200%;
+    padding: 50px;
+    vertical-align: top;
+}
+
+.bottomp{
+    background-color: #D0B6A8;
+    padding: 30px;
+    text-align: center;
+}
+
+footer{
+    background-color:  #2F180C;
+    height: 60px;
+    color: white;
+}
+
+img{
+    height: 400px;
+}
+
+ul{
+    list-style-type: circle;
+}

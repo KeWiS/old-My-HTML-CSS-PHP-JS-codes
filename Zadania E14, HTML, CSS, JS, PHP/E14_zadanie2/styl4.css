@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+}
+
+header{
+    background-image: url("menu.jpg");
+    height: 200px;
+    color: blue;
+}
+
+.leftp{
+    background-color: RGB(255, 218, 65);
+    height: 400px;
+    width: 40%;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    float: left;
+}
+
+.midp{
+    background-color: RGB(255, 226, 100);
+    height: 400px;
+    width: 30%;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.rightp{
+    background-color: RGB(255, 233, 143);
+    height: 400px;
+    width: 30%;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    float: right;
+}
+
+footer{
+    background-color: RGB(255, 218, 65);
+    color: blue;
+}
+
+a{
+    color: green;
+}
+
+p{
+    font-size: 130%;
+}
