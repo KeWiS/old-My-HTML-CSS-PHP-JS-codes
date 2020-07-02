@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8" />
+        <title>Filmy</title>
+        <link rel = "stylesheet" type = "text/css" href = "styl1.css" />
+    </head>
+    <body>
+        <section class = "lewy">
+            <h3>Dostępne gatunki filmu</h3>
+            <ol>
+                <li>Sci-Fi</li>
+                <li>animacja</li>
+                <li>dramat</li>
+                <li>horror</li>
+                <li>komedia</li>
+            </ol>
+            <p><a href = "kadr.jpg">Pobierz obraz</a></p>
+            <p><a href = "https://repertuar-kin.pl">Sprawdź repertuar kin</a></p>
+        </section>
+        <section class = "p_gora">
+            <h1>FILMOTEKA</h1>
+        </section>
+        <section class = "p_srodek">
+            <form method = "POST" action = "dodaj.php">
+                Tytuł: <input type = "text" name = "tytul" /><br>
+                Gatunek filmu: <input type = "number" name = "gatunek" /><br>
+                Rok produkcji: <input type = "number" name = "rok" /><br>
+                Ocena: <input type = "number" name = "ocena" /><br>
+                <button type = "reset">CZYŚĆ</button><button type = "submit">DODAJ</button>
+            </form>
+        </section>
+        <section class = "p_dol">
+            <img src = "kadr.jpg" alt = "zdjęcia filmowe" />
+        </section>
+        <footer>
+            <p>Autor strony Michał Siwek</p>
+        </footer>
+    </body>
+</html>

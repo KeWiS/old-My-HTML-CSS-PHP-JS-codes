@@ -1,0 +1,4 @@
+Zapytanie 1: INSERT INTO czytelnicy(imie, nazwisko, kod) values("Anna", "Michalak", "an05mi")
+Zapytanie 2: SELECT imie, nazwisko from czytelnicy
+Zapytanie 3: SELECT tytul from ksiazki inner join autorzy on ksiazki.id_autor = autorzy.id where autorzy.nazwisko like "Fredro"
+Zapytanie 4: SELECT autorzy.nazwisko, count(ksiazki.id_autor) as ilosc from autorzy inner join ksiazki on autorzy.id = ksiazki.id_autor group by autorzy.nazwisko

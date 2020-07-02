@@ -1,0 +1,4 @@
+Zapytanie 1: INSERT INTO filmy(gatunki_id, tytul, rok, ocena) values("5", "Suburbicon", "2017", "5")
+Zapytanie 2: SELECT filmy.tytul, gatunki.nazwa from filmy inner join gatunki on filmy.gatunki_id = gatunki.id where filmy.ocena = 6
+Zapytanie 3: SELECT filmy.tytul, filmy.rok from filmy inner join gatunki on filmy.gatunki_id = gatunki.id where filmy.ocena = 6 and gatunki.nazwa like "dramat"
+Zapytanie 4: CREATE TABLE aktorzy(id int not null auto_increment primary key, imie text(20), nazwisko text(20))

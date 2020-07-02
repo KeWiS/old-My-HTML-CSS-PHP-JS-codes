@@ -1,0 +1,58 @@
+*{
+    font-family: Helvetica;
+}
+
+.lewy{
+    background-color: navy;
+    color: white;
+    height: 700px;
+    width: 25%;
+    float: left;
+    display: inline-block;
+}
+
+.p_gora{
+    background-color: royalblue;
+    height: 100px;
+    width: 75%;
+    text-align: center;
+    float: right;
+    display: inline-block;
+}
+
+.p_srodek{
+    background-color: steelblue;
+    height: 300px;
+    width: 75%;
+    float: right;
+    display: inline-block;
+}
+
+.p_dol{
+    background-color: royalblue;
+    height: 300px;
+    width: 75%;
+    text-align: center;
+    float: right;
+    display: inline-block;
+}
+
+footer{
+    background-color: steelblue;
+    text-align: center;
+    padding: 20px;
+    vertical-align: bottom;
+}
+
+h1{
+    letter-spacing: 5px;
+}
+
+form{
+    margin: 30px;
+    line-height: 3;
+}
+
+form:hover{
+    background-color: deepskyblue;
+}
